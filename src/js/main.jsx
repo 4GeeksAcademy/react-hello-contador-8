@@ -16,7 +16,7 @@ const rootElement = document.getElementById("root")
 const numbers = [1 ,2 ,3 ,4, 5]
 
 setInterval(() =>{
-    const number = numbers[Math.floor(Math.random()* VideoColorSpace.length)]
+    const number = numbers[Math.floor(Math.random() * VideoColorSpace.length)]
     ReactDOM.createRoot(rootElement).render(
         <React.StrictMode><Home number={number} /></React.StrictMode>,
 
