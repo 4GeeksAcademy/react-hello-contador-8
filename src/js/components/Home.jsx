@@ -10,7 +10,7 @@ function Home(props){
             <div className="card-body">
                 <h5 className="card-title text-white">Card title</h5>
                 <p className="card-text text-white">Some quick example text to build on the card title and fill the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <a href="#" className="btn btn-primary">{props.number}</a>
             </div>
         </div>
     );

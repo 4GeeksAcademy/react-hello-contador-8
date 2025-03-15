@@ -11,11 +11,25 @@ import '../styles/index.css'
 // components
 import Home from './components/Home';
 
+
+const rootElement = document.getElementById("root")
+const numbers = [1 ,2 ,3 ,4, 5]
+
+setInterval(() =>{
+    const number = numbers[Math.floor(Math.random()* VideoColorSpace.length)]
+    ReactDOM.createRoot(rootElement).render(
+        <React.StrictMode><Home number={number} /></React.StrictMode>,
+
+    )
+    
+}, 1000)
+
+
 // ReactDOM.createRoot(document.getElementById('root')).render(
 //   <React.StrictMode>
 //     <Home/>
 //   </React.StrictMode>,
 // )
 
-const root = ReactDOM.createRoot(document.querySelector('#root'));
-root.render(<Home />);
+// const root = ReactDOM.createRoot(document.querySelector('#root'));
+// root.render(<Home />);
