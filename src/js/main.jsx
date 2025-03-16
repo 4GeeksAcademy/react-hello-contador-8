@@ -8,8 +8,6 @@ import "bootstrap"
 // index.css'
 import '../styles/index.css'
 
-import './components/icons'
-
 // components
 import Contador from './components/Contador';
 
