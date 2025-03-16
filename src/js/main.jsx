@@ -9,7 +9,7 @@ import "bootstrap"
 import '../styles/index.css'
 
 // components
-import Home from './components/Home';
+import Home from './components/Contador';
 
 
 const rootElement = document.getElementById("root")
