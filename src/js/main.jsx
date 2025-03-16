@@ -18,7 +18,7 @@ const numbers = [1 ,2 ,3 ,4, 5]
 setInterval(() =>{
     const number = numbers[Math.floor(Math.random() * numbers.length)]
     ReactDOM.createRoot(rootElement).render(
-        <React.StrictMode><Home number={number} /></React.StrictMode>,
+        <React.StrictMode><Contador number={number} /></React.StrictMode>,
 
     )
     
