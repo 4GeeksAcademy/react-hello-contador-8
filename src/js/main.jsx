@@ -8,12 +8,19 @@ import "bootstrap"
 // index.css'
 import '../styles/index.css'
 
+import fontawesome from '@fortawesome/fontawesome';
+import faClock from '@fortawesome/fontawesome-free-regular/faClock';
+fontawesome.config = {
+  autoReplaceSvg: 'nest'
+};
+fontawesome.library.add(faClock);
+
 // components
 import Contador from './components/Contador';
 
 
 const rootElement = document.getElementById("root")
-const numbers = [1 ,2 ,3 ,4, 5]
+const numbers = [1 ,2 ,3 ,4, 5, 6]
 
 setInterval(() =>{
     const number = numbers[Math.floor(Math.random() * numbers.length)]
