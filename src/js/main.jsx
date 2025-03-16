@@ -8,12 +8,7 @@ import "bootstrap"
 // index.css'
 import '../styles/index.css'
 
-import fontawesome from '@fortawesome/fontawesome';
-import faClock from '@fortawesome/fontawesome-free-regular/faClock';
-fontawesome.config = {
-  autoReplaceSvg: 'nest'
-};
-fontawesome.library.add(faClock);
+import './components/icons'
 
 // components
 import Contador from './components/Contador';
