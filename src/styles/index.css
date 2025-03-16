@@ -9,3 +9,15 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.card{
+    border-radius: 20px;
+}
+
+.card-body > a{
+    display: inline-block;
+    background-color: #101010 !important;
+    font-size: 60px;
+    width: 80px;       /* Ajusta el tamaño según lo que necesites */
+    
+}
