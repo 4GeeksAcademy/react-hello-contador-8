@@ -14,7 +14,7 @@ import Contador from './components/Contador';
 
 
 const rootElement = document.getElementById("root")
-let counter = 564586;
+let counter = 0;
 
 setInterval(() =>{
     // const number = numbers[Math.floor(Math.random() * numbers.length)]
@@ -23,7 +23,7 @@ setInterval(() =>{
 
     )
     counter ++;
-}, 1)
+}, 1000)
 
 
 // ReactDOM.createRoot(document.getElementById('root')).render(
