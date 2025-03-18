@@ -10,13 +10,13 @@ function Contador (props){
     return (
         <div className="card d-flex text-center bg-dark mt-5 mx-5 p-5">
             <div className="card-body">
-                <a href="#" className="btn  btn-lg mx-5 fs-1 py-4 text-warning fw-bold"><FontAwesomeIcon icon={faClock} /></a>
-                <a href="#" className="btn  btn-lg mx-5 fs-1 py-4 text-white">0</a>
-                <a href="#" className="btn  btn-lg mx-5 fs-1 py-4 text-white">0</a>
-                <a href="#" className="btn  btn-lg mx-5 fs-1 py-4 text-white">0</a>
-                <a href="#" className="btn  btn-lg mx-5 fs-1 py-4 text-white">0</a>
-                <a href="#" className="btn  btn-lg mx-5 fs-1 py-4 text-white">0</a>
-                <a href="#" className="btn  btn-lg mx-5 fs-1 py-4 text-danger fw-bold">{props.number}</a>
+                <div  className="btn  btn-lg mx-5 fs-1 py-4 text-warning fw-bold"><FontAwesomeIcon icon={faClock} /></div>
+                <div  className="btn  btn-lg mx-5 fs-1 py-4 text-danger fw-bold">{Math.floor(props.number/100000)%10}</div>
+                <div  className="btn  btn-lg mx-5 fs-1 py-4 text-white">{Math.floor(props.number/10000)%10}</div>
+                <div  className="btn  btn-lg mx-5 fs-1 py-4 text-white">{Math.floor(props.number/1000)%10}</div>
+                <div  className="btn  btn-lg mx-5 fs-1 py-4 text-white">{Math.floor(props.number/100)%10}</div>
+                <div  className="btn  btn-lg mx-5 fs-1 py-4 text-white">{Math.floor(props.number/10)%10}</div>
+                <div  className="btn  btn-lg mx-5 fs-1 py-4 text-white">{Math.floor(props.number/1)%10}</div>
             </div>
         </div>
     );
